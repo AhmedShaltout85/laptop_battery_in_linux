@@ -1,0 +1,17 @@
+ahmedshaltout@ubt:/proc/acpi$ cat /sys/class/power_supply/BAT0/cycle_count 
+
+ahmedshaltout@ubt:~$ cd /sys/class/power_supply/BAT0/
+
+ahmedshaltout@ubt:/sys/class/power_supply/BAT0$ cat energy_full_design 
+36000000
+ahmedshaltout@ubt:/sys/class/power_supply/BAT0$ cat energy_full
+31580000
+
+31580000÷36000000 = 0.877222222 * 100 = ~ 89 %
+
+
+ahmedshaltout@ubt:/$ upower -d | grep -i charge-cycles && upower -d |grep -i capacity
+
+
+
+

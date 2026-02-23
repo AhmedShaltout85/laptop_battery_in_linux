@@ -1,0 +1,25 @@
+to check it enable or not
+ahmedshaltout@lonovo-legion-5:~$ cat /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode
+this is enable 
+echo 1 | sudo tee /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode
+
+to disable it 
+echo 0 | sudo tee /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode
+
+
+edit 
+ahmedshaltout@lonovo-legion-5:~$ echo 1 | sudo tee /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode
+echo 0 | sudo tee /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode
+
+tlp status
+ahmedshaltout@lonovo-legion-5:~$ sudo tlp-stat -s
+to enable it
+ahmedshaltout@lonovo-legion-5:~$ sudo nano /etc/tlp.conf
+# Battery charge level below which charging will begin.
+#START_CHARGE_THRESH_BAT0=55
+# Battery charge level above which charging will stop.
+#STOP_CHARGE_THRESH_BAT0=1
+
+sudo systemctl restart tlp
+
+sudo sed -i 's/STOP_CHARGE_THRESH_BAT0=60/STOP_CHARGE_THRESH_BAT0=1/' /etc/tlp.conf    
