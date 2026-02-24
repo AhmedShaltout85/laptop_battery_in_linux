@@ -1,0 +1,131 @@
+أشارك معكم أهم 9.5 تطبيقات أستخدمها على أي توزيعة، سواء كان خادم أو جهاز مكتبي، أدوات حديثة للطرفية في لينكس ستجعل تجربتك أسرع، أوضح، وأكثر احترافية!
+###update⚓︎
+###update system
+sudo apt update
+sudo apt upgrade
+###bat – Modern cat with syntax highlighting⚓︎
+###Install
+sudo apt install bat
+###Setup
+mkdir -p ~/.local/bin/
+ln -s /usr/bin/batcat ~/.local/bin/bat
+###duf – Disk usage / df replacement⚓︎
+###Install
+sudo apt install duf
+###eza – Modern ls replacement⚓︎
+###Install
+sudo apt install eza
+###Setup
+grep -qxF "# eza alias" ~/.bashrc || {
+  {
+    echo ""
+    echo "# eza alias"
+    echo "alias ll='eza -lah --icons --group-directories-first'"
+    echo "alias ls='eza --icons --group-directories-first'"
+  } >> ~/.bashrc
+}
+###btop – Modern system monitor (htop replacement)⚓︎
+###Install
+sudo apt install btop
+###fastfetch – System info for terminal (neofetch replacement)⚓︎
+###Install
+sudo apt install fastfetch
+###dust – Human-friendly disk usage (du replacement)⚓︎
+###Install
+sudo apt install du-dust
+###zoxide – Smart directory jumping⚓︎
+###Install
+sudo apt install zoxide
+###Initialize zoxide in shell (adds z/zi)
+grep -qxF 'eval "$(zoxide init bash)"' ~/.bashrc >/dev/null || cat >> ~/.bashrc <<'EOF'
+
+# zoxide setup
+eval "$(zoxide init bash)"
+
+EOF
+###fzf – Fuzzy finder⚓︎
+###Install
+sudo apt install git
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+###starship – Modern, fast shell prompt⚓︎
+###Install
+sudo apt install starship
+###Initialize Starship prompt in shell
+grep -qxF 'eval "$(starship init bash)"' ~/.bashrc >/dev/null || cat >> ~/.bashrc <<'EOF'
+
+# starship setup
+eval "$(starship init bash)"
+
+EOF
+###Bonus: fzf + zoxide → zi⚓︎
+###Combines zoxide ranking with fzf interactive selection
+###Usage:
+zi                 # interactive directory jump
+z <partial-dir>    # jump instantly to most-used directory
+###fonts⚓︎
+###Install JetBrainsMono Nerd Font
+mkdir -p ~/.local/share/fonts/JetBrainsMono
+curl -sLO https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.tar.xz
+tar -xvf JetBrainsMono.tar.xz -C ~/.local/share/fonts/JetBrainsMono
+rm JetBrainsMono.tar.xz
+fc-cache -fv ~/.local/share/fonts
+fc-list | grep "JetBrains"
+#############################################################
+أشارك معكم 3 أدوات وتطبيقات خفيفة ومهمة لأفضل تجربة استخدام على الطرفية في لينكس، سواء كنت تستخدم Bash أو Zsh، الأدوات مهمة وفعالة.
+###Tools⚓︎
+sudo apt update && sudo apt install gpg git curl
+###NerdFont⚓︎
+mkdir -p ~/.local/share/fonts \
+&& cd ~/.local/share/fonts \
+&& curl -OL https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.tar.xz \
+&& bash -c 'mkdir "${1%.tar.xz}" && tar -xf "$1" -C "${1%.tar.xz}"' _ JetBrainsMono.tar.xz \
+&& rm JetBrainsMono.tar.xz \
+&& fc-cache -fv
+###Starship⚓︎
+###Install
+
+curl -sS https://starship.rs/install.sh | sh
+Add it to bashrc
+
+echo 'eval "$(starship init bash)"' >> ~/.bashrc
+###Add it to zshrc
+
+echo 'eval "$(starship init zsh)"' >> ~/.zshrc
+fzf⚓︎
+###Use the official script
+
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+###And add the following line to your shell configuration file
+
+
+###bash
+zsh
+# Set up fzf key bindings and fuzzy completion
+eval "$(fzf --bash)"
+
+###eza⚓︎
+###Install eza via:
+
+sudo mkdir -p /etc/apt/keyrings \
+&& wget -qO- https://raw.githubusercontent.com/eza-community/eza/main/deb.asc | sudo gpg --dearmor -o /etc/apt/keyrings/gierens.gpg \
+&& echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/gierens.gpg] http://deb.gierens.de stable main" | sudo tee /etc/apt/sources.list.d/gierens.list \
+&& sudo chmod 644 /etc/apt/keyrings/gierens.gpg /etc/apt/sources.list.d/gierens.list \
+&& sudo apt update \
+&& sudo apt install -y eza
+Add alias to .bashrc
+
+nano ~/.bashrc
+~/.bashrc
+alias ls='eza --color=auto --icons=auto'
+alias eza='eza --color=auto --icons=auto'
+alias ll='eza -l'
+alias la='eza -lah'
+alias lt='eza -T'
+مراجع
+⚓︎
+###NerdFont
+###Starship
+###fzf
+###eza
