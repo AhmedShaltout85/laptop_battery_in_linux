@@ -1,9 +1,12 @@
+extension-list@tu.berry
 system-monitor-tray@lsb.codes
 ideapad-controls@woomymy.protonmail.com
 blur-my-shell@aunetx
 advanced-weather@sanjai.com
 draw-on-gnome@daveprowse.github.io
 freon@UshakovVasilii_Github.yahoo.com
+wiggle@mechtifs
+uptime-indicator@gniourfgniourf.gmail.com
 gnome-transparent-windows@sonersg.com
 docker@stickman_0x00.com
 caffeine@patapon.info
@@ -37,5 +40,4 @@ user-theme@gnome-shell-extensions.gcampax.github.com
 window-list@gnome-shell-extensions.gcampax.github.com
 windowsNavigator@gnome-shell-extensions.gcampax.github.com
 workspace-indicator@gnome-shell-extensions.gcampax.github.com
-uptime-indicator@gniourfgniourf.gmail.com
-wiggle@mechtifs
+EasyScreenCast@iacopodeenosee.gmail.com
