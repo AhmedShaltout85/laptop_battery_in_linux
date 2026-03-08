@@ -1,4 +1,6 @@
 extension-list@tu.berry
+EasyScreenCast@iacopodeenosee.gmail.com
+color-picker@tuberry
 system-monitor-tray@lsb.codes
 ideapad-controls@woomymy.protonmail.com
 blur-my-shell@aunetx
@@ -7,6 +9,8 @@ draw-on-gnome@daveprowse.github.io
 freon@UshakovVasilii_Github.yahoo.com
 wiggle@mechtifs
 uptime-indicator@gniourfgniourf.gmail.com
+compiz-alike-magic-lamp-effect@hermes83.github.com
+compiz-windows-effect@hermes83.github.com
 gnome-transparent-windows@sonersg.com
 docker@stickman_0x00.com
 caffeine@patapon.info
@@ -40,4 +44,3 @@ user-theme@gnome-shell-extensions.gcampax.github.com
 window-list@gnome-shell-extensions.gcampax.github.com
 windowsNavigator@gnome-shell-extensions.gcampax.github.com
 workspace-indicator@gnome-shell-extensions.gcampax.github.com
-EasyScreenCast@iacopodeenosee.gmail.com
