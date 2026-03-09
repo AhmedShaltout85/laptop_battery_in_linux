@@ -44,3 +44,4 @@ window-list@gnome-shell-extensions.gcampax.github.com
 windowsNavigator@gnome-shell-extensions.gcampax.github.com
 workspace-indicator@gnome-shell-extensions.gcampax.github.com
 advanced-weather@sanjai.com
+quick-settings-avatar@d-go
