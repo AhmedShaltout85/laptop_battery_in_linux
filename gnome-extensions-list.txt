@@ -4,14 +4,13 @@ color-picker@tuberry
 system-monitor-tray@lsb.codes
 ideapad-controls@woomymy.protonmail.com
 blur-my-shell@aunetx
-advanced-weather@sanjai.com
 draw-on-gnome@daveprowse.github.io
 freon@UshakovVasilii_Github.yahoo.com
 wiggle@mechtifs
 uptime-indicator@gniourfgniourf.gmail.com
 compiz-alike-magic-lamp-effect@hermes83.github.com
 compiz-windows-effect@hermes83.github.com
-gnome-transparent-windows@sonersg.com
+appindicatorsupport@rgcjonas.gmail.com
 docker@stickman_0x00.com
 caffeine@patapon.info
 openbar@neuromorph
@@ -44,5 +43,4 @@ user-theme@gnome-shell-extensions.gcampax.github.com
 window-list@gnome-shell-extensions.gcampax.github.com
 windowsNavigator@gnome-shell-extensions.gcampax.github.com
 workspace-indicator@gnome-shell-extensions.gcampax.github.com
-appindicatorsupport@rgcjonas.gmail.com
-openweather-extension@penguin-teal.github.io
+advanced-weather@sanjai.com
